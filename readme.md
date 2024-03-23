@@ -32,7 +32,7 @@ The scope of variables declared with const :
 2. variables cannot be redeclared, and neither can they be reassigned to other values. Attempting such would throw an error.
 3. Variables declared with let are hoisted to the top of their global, local, or block scop. But, let variables are hoisted without a default initialization. By trying to access this variable before the line of declaration, we get ReferenceError: Cannot access 'number' before initialization.
 
-Data types :
+<b>Data types :</b>
 
 - Primitive
   number, bigint, string, boolean, null, undefined, symbol
