@@ -52,4 +52,36 @@ typeof : // use to find the data type of a value
 - Two types of memory stack and heap
 - Primitive use stack memory & Non primitive use Heap memory
 - Stack memory provide a copy & Heap memory provide a reference
--
+
+<b>Strings in javascript</b>
+
+const name = "Ravi"
+const repoCount = 50
+// console.log(name+' - '+repoCount)
+// console.log(`Hello my name is ${name}`)
+
+const game = new String("Car Drive")
+
+- this string have many type of prototypes, and it print like a object
+  string.**proto** (show all prototypes methods)
+  length, toUpperCase(), chatAt(), indexOf(), substring(0,4), slice(0,4), trim(), includes()
+
+<b>Numbers</b>
+
+- const num = new Number(100)
+  num.length, num.toString(), num.toFixed(2), num.toPrecision(2),
+  num.toLocalString('en-IN') (for format with comma)
+
+<b>Date and time in depth</b>
+
+- let myDate = new Date() // its object
+  myDate.toString() // in GMT
+  myDate.toDateString()
+  myDate.toLocalString()
+
+* let myCreatedDate = new Date(2023, 0, 23) // toDateString // Mon Jan 23 2023
+* let myCreatedDate = new Date(2023, 0, 23, 5 , 3) // toLocalString // Mon Jan 23 2023 5:03:00
+* let myTimestamp = Date.now() // Timestamp (it can compare easily - milliseconds)
+* Math.floor(Date.now()/1000) // compare in seconds
+* let newDate = new Date() // newDate.getMonth()
+* newDate.toLocalString('default', {weekday:'long', timezone:''})
