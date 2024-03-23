@@ -128,3 +128,35 @@ Array's methods
   let score2 = 100;
   let score3 = 100;
   Array.of(score1, score2, score3); // make an array
+
+<b>Objects in javascript</b>
+
+- singleton //
+
+- Object literals
+  const jsUser = {name:"Hitesh", age:18, location:"Jaipur"}
+
+- Object.freeze()
+
+- jsUser.greeting = function() { console.log(`Hello JS user : ${this.name}`); }
+  console.log(jsUser.greeting())
+
+* const tinderUser = new Object(); // Singleton object
+* const tinderUser = {}; // Non Singleton object
+  tinderUser.id = "123454"
+  tinderUser.name = "Sammy"
+
+* const obj1 = { 1:"a", 2:"b"};
+  const obj2 = { 3:"a", 4:"b"};
+  const obj3 = { 5:"a", 6:"b"};
+  const obj4 = Object.assign({}, obj1, obj2, obj3)
+  or
+  const obj4 = {...obj1, ...obj2, ...obj3}
+
+* Object.keys(obj) // for get all keys
+* Object.values(obj) // for get all values
+* jsUser.hasOwnProerty('name')
+
+* const course = {price:999, courseName:'JS', instructor:'HC'}
+  const { price, courseName, instructor } = course // Object destructor
+  console.log(price)
