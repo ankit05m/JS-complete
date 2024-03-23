@@ -2,7 +2,7 @@
 
 - We have javascript engine like node JS, deno JS
 
-LET VAR and CONST
+<b>LET VAR and CONST</b>
 
 - For storing something in a space we need a variables
 - For assigning values in memory we use variables
@@ -46,3 +46,10 @@ typeof : // use to find the data type of a value
 
 - typeof undefined // undefined
 - typeof null // object
+
+<b>Stack and Heap memory in javascript</b>
+
+- Two types of memory stack and heap
+- Primitive use stack memory & Non primitive use Heap memory
+- Stack memory provide a copy & Heap memory provide a reference
+-
