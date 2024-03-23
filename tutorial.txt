@@ -1,0 +1,27 @@
+
+
+"use strict"   // treats for newer version using of javascript otherwise it will give error
+
+alert(3+3)   // it gives error bcoz we are using node js not browser
+
+Data types 
+    Primitive
+    number, bigint, string, boolean, null, undefined, symbol
+    Stack memory use
+
+    Non Primitive
+    Array, objects, function
+    Heap memory use ( for give Reference )
+
+typeof   //  use to find the data type of a value
+
+    typeof undefined  // undefined
+    typeof null       // object
+
+---------------------------------------------------
+
+* Converstion confusion
+
+    let val = "33";
+    val = Number(val);
+
