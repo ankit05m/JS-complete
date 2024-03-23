@@ -2,7 +2,7 @@
 
 - We have javascript engine like node JS, deno JS
 
-<b>LET VAR and CONST</b>
+<b>LET, VAR and CONST</b>
 
 - For storing something in a space we need a variables
 - For assigning values in memory we use variables
@@ -72,7 +72,7 @@ const game = new String("Car Drive")
   num.length, num.toString(), num.toFixed(2), num.toPrecision(2),
   num.toLocalString('en-IN') (for format with comma)
 
-<b>Date and time in depth</b>
+<b>Date and time</b>
 
 - let myDate = new Date() // its object
   myDate.toString() // in GMT
@@ -85,3 +85,46 @@ const game = new String("Car Drive")
 * Math.floor(Date.now()/1000) // compare in seconds
 * let newDate = new Date() // newDate.getMonth()
 * newDate.toLocalString('default', {weekday:'long', timezone:''})
+
+<b>Array</b>
+
+const myArr = [1,2,3,4,5,6]
+
+- can be different types of element
+- array is object of collection of items
+- array is resizable
+- array indexing start from zero
+- array copy operation create shallow copy
+- shallow copy (copy to the same reference point) & Depp copy (do not share the same reference)
+
+* const myArr2 = new Array(1,2,3,4) // provide prototypes
+
+Array's methods
+
+- myArr.push(6)
+- myArr.pop()
+- myArr.unshift(9)
+- myArr.shift()
+- myArr.includes(9)
+- myArr.indexOf(9)
+- const newArr = myArr.join() // convert it in string
+
+* const marvel_heros = ["thor", "Ironman", "spiderman"]
+  const dc_heros = ["superman", "flash", "batman"]
+  marvel_heros.push(dc_heros) // push dc complete array in marvel array as element
+
+  const all_heros = marvel_heros.concat(dc_heros) // proper merge both array
+
+  const all_new_heros = [...marvel_heros, ..dc_heros]; // merge
+
+  const anotherArray = [1,2,3, [4,5,6], 7, [6,7, [4,5]]];
+  const newAnotherArray = anotherArray.flat(Infinity)
+
+  Array.isArray("Hitesh") // False
+  Array.from("Hitesh") // convert in array
+  Array.from({name:"Hitesh"}) // return blank array
+
+  let score1 = 100;
+  let score2 = 100;
+  let score3 = 100;
+  Array.of(score1, score2, score3); // make an array
